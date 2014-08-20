@@ -1,0 +1,112 @@
+/* ==========================================================================
+	Typography style based on KNACSS
+	http://www.knacss.com/
+========================================================================== */
+html {
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	background-color: #ffffff;
+	color: #111;
+	font-family: Helvetica, Arial, sans-serif; /* Insert here the font you want and don't forget fallback ! */
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+/*
+* Titles
+*/
+h1,
+.h1-like {
+	font-size: 32px;
+	font-size: 3.2rem;
+}
+
+h2,
+.h2-like {
+	font-size: 28px;
+	font-size: 2.8rem;
+}
+
+h3,
+.h3-like {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4,
+.h4-like {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5,
+.h5-like {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6,
+.h6-like {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+/*
+* Alternate font sizing
+*/
+.smaller {
+	font-size: 0.71em;
+}
+
+.small {
+	font-size: 0.86em;
+}
+
+.big {
+	font-size: 1.14em;
+}
+
+.bigger {
+	font-size: 1.29em;
+}
+
+.biggest {
+	font-size: 1.43em;
+}
+
+
+em,
+.em,
+i {
+	font-style: italic;
+}
+
+.no-em {
+	font-style: normal;
+}
+
+strong,
+.strong,
+b {
+	font-weight: bold;
+}
+
+.no-strong {
+	font-weight: normal;
+}
+
+sup,
+sub {
+	vertical-align: 0;
+	position: relative;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
