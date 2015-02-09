@@ -15,9 +15,6 @@
 /*
 * forms items
 */
-button {
-	-webkit-appearance: none;
-}
 input,
 button,
 select,
