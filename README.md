@@ -12,7 +12,7 @@ Tout ce qu'il faut pour démarrer une intégration rapidement.
 
 
 ## Plugins
-Besoin d'un plugin JavaScript ? Voici une liste de plugin conseillé :
+Besoin d'un plugin JavaScript ? Voici une liste de plugins conseillés :
 - Tabs : https://github.com/nico3333fr/jquery-accessible-tabs-aria
 - Slider / Carousel : http://jquery.malsup.com/cycle2/
 - Slider / Carousel : https://github.com/bartdc/jQuery-a11y-slideshow--based-on-slidesjs.com
