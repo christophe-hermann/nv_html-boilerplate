@@ -1,3 +1,9 @@
+/*------------------------------------*\
+#FONT FACE
+\*------------------------------------*/
+
+
+
 /* ==========================================================================
 	Typography style based on KNACSS
 	http://www.knacss.com/
@@ -8,52 +14,69 @@ html {
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
+/* Stupid IE11 - https://connect.microsoft.com/IE/feedback/details/816709/ie-11-calculating-font-sizes-wrong-when-setting-the-bodys-font-size-in-relative-units */
+_:-ms-fullscreen, :root {
+    font-size: calc(1em * .625);
+}
+
 body {
-	background-color: #ffffff;
-	color: #111;
-	font-family: Helvetica, Arial, sans-serif; /* Insert here the font you want and don't forget fallback ! */
-	font-size: 1em;
-	line-height: 1.5;
+    font: {
+       family: $ff-sans-serif;
+       size: 1.6em;
+    }
+	color: $c-txt;
+    line-height: 1.5;
 }
 
 /*
 * Titles
 */
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1-like,
+.h2-like,
+.h3-like,
+.h4-like,
+.h5-like,
+.h6-like {
+    font-family: $ff-heading;
+    line-height: 1;
+}
+
+h1,
 .h1-like {
-	font-size: 32px;
 	font-size: 3.2rem;
 }
 
 h2,
 .h2-like {
-	font-size: 28px;
-	font-size: 2.8rem;
+	font-size: 3rem;
 }
 
 h3,
 .h3-like {
-	font-size: 24px;
 	font-size: 2.4rem;
 }
 
 h4,
 .h4-like {
-	font-size: 20px;
 	font-size: 2rem;
 }
 
 h5,
 .h5-like {
-	font-size: 18px;
 	font-size: 1.8rem;
 }
 
 h6,
 .h6-like {
-	font-size: 16px;
 	font-size: 1.6rem;
 }
+
 
 /*
 * Alternate font sizing
@@ -109,4 +132,37 @@ sup {
 }
 sub {
 	top: .5ex;
+}
+
+
+/*
+* Avoid top margins on first content element
+*/
+p:first-child,
+.p-like:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+
+/**
+* Links
+*/
+a {
+    color: $c-link;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }

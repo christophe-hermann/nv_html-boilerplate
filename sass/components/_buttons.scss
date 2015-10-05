@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+[class*="btn-"] {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: $btn-minwidth;
+    padding: $btn-padding;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    transition: background-color 250ms ease-in;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: $ff-heading;
+    font-weight: 300;
+
+    .no-touch & {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+
+.btn-primary {
+    border: 1px solid $c-primary;
+    background-color: transparent;
+    color: $c-primary;
+
+    .no-touch & {
+        &:hover,
+        &:focus {
+            background-color: $c-primary;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.btn-secondary {
+    border: 1px solid $c-primary;
+    background-color: $c-primary;
+    color: #fff;
+
+    .no-touch & {
+        &:hover,
+        &:focus {
+            background-color: #fff;
+            color: $c-primary;
+        }
+    }
+}
