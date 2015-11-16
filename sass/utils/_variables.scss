@@ -118,12 +118,12 @@ $mq-responsive: true;
 // stakeholders, designers, developers, and testers.
 $mq-breakpoints: (
     mobile:  $screen-xs,
-    phablet: 600px,
     tablet:  $screen-sm,
     desktop: $screen-md,
     wide:    $screen-lg,
 
     // Tweakpoints
+    phablet: 600px,
     desktopAd: 810px,
     mobileLandscape: 480px
 );
