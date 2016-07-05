@@ -11,11 +11,13 @@
 
 ::-moz-selection {
     background: $c-primary;
+    color: $c-secondary;
     text-shadow: none;
 }
 
 ::selection {
     background: $c-primary;
+    color: $c-secondary;
     text-shadow: none;
 }
 

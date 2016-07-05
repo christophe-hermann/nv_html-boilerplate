@@ -21,8 +21,11 @@ $c-secondary: #e8a713;
 
 
 /* Gray and others */
-$c-lightgray:   #e3e3e3;
-$c-medgray:     #999;
+$c-lightergray:     #f1f1f1;
+$c-lightgray:       #e3e3e3;
+$c-medgray:         #999;
+$c-darkgray:        #333;
+$c-darkergray:      #111;
 
 
 /* Text color */
@@ -37,10 +40,10 @@ $c-visited:         darken($c-link, 10%);
 
 /* Notifications colors */
 $message-types: (
-  error : #80262c,
-  warn  : #f0ad4e,
-  success : #318026,
-  info  : #5bc0de
+    error : #80262c,
+    warn  : #f0ad4e,
+    success : #318026,
+    info  : #5bc0de
 );
 
 
@@ -49,10 +52,10 @@ $message-types: (
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
+$fz-base: 1.6em;
 $ff-sans-serif: Arial, Helvetica, sans-serif;
 $ff-serif: Georgia, "Times New Roman", serif;
 $ff-heading: Impact, sans-serif;
-$fz-base: 1.6em;
 
 
 /*------------------------------------*\
@@ -164,4 +167,4 @@ $container-large-desktop:      (71.25em + $grid-gutter-width) !default;
 $container-lg:                 $container-large-desktop !default;
 
 // Container max-width
-$container-mw:                 80em;
+$container-mw:                 120rem;

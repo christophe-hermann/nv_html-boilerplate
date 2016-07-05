@@ -12,6 +12,47 @@
 }
 
 
+// Image cover-effect
+@mixin cover-image {
+    height: auto;
+    left: 50%;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+// Center element with the translate trick
+@mixin centerer($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    } @else if ($vertical) {
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+}
+
+
+
 
 
 /*------------------------------------*\

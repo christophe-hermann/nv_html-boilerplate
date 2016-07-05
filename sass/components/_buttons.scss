@@ -8,11 +8,12 @@
     text-align: center;
     color: #fff;
     border: 0;
-    transition: background-color 250ms ease-in;
     line-height: 1;
     text-decoration: none;
+    transition: background-color 250ms ease-in, color 250ms ease-in;
 
-    .no-touchevents & {
+    .no-touchevents &,
+    .no-js & {
         &:hover,
         &:focus {
             text-decoration: none;
@@ -27,7 +28,8 @@
     background-color: transparent;
     color: $c-primary;
 
-    .no-touchevents & {
+    .no-touchevents &,
+    .no-js & {
         &:hover,
         &:focus {
             background-color: $c-primary;
@@ -43,7 +45,8 @@
     background-color: $c-primary;
     color: #fff;
 
-    .no-touchevents & {
+    .no-touchevents &,
+    .no-js & {
         &:hover,
         &:focus {
             background-color: #fff;
