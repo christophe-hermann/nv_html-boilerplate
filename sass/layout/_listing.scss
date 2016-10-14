@@ -5,7 +5,7 @@
     @extend %unstyled-list;
     @extend .row;
 
-    li {
+    > li {
         padding-left: ($grid-gutter-width / 2) * 1em;
         padding-right: ($grid-gutter-width / 2) * 1em;
         margin-bottom: ($grid-gutter-width) * 1em;
@@ -15,7 +15,7 @@
     @include mq($from: phablet){
         &.-three,
         &.-four {
-            li {
+            > li {
                 float: left;
                 width: 50%;
 
@@ -29,7 +29,7 @@
 
     @include mq($from: phablet){
         &.-three {
-            li {
+            > li {
                 width: 33.3333%;
 
                 &:nth-child(2n + 1){
@@ -43,7 +43,7 @@
         }
 
         &.-two {
-            li {
+            > li {
                 float: left;
                 width: 50%;
 
@@ -57,7 +57,7 @@
 
     @include mq($from: desktop){
         &.-four {
-            li {
+            > li {
                 width: 25%;
 
                 &:nth-child(2n + 1){

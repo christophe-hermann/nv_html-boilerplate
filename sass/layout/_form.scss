@@ -4,7 +4,6 @@
 	github.com/nathansmith/formalize
 	and www.sitepen.com
 	 ========================================================================== */
-
 /*
 * forms items
 */
@@ -80,7 +79,7 @@ input[type='submit']::-moz-focus-inner {
 * Placeholder
 */
 ::-webkit-input-placeholder {
-	color: #777;
+	color: $c-txt;
 	opacity: 1;
 }
 
@@ -88,7 +87,7 @@ input:-moz-placeholder,
 input::-moz-placeholder,
 textarea:-moz-placeholder,
 textarea::-moz-placeholder {
-	color: #777;
+	color: $c-txt;
 	opacity: 1;
 }
 
@@ -105,8 +104,6 @@ select {
     background-color: $input-bg;
     border: $input-border;
     padding: $input-padding;
-    height: 4.3rem;
-
 
     &.error {
         color: map-get($message-types, error);

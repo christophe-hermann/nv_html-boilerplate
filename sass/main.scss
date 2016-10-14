@@ -4,10 +4,13 @@
 @import "utilities/mixins";
 @import "utilities/helpers";
 @import "utilities/sass-mq";
+// Import debug if debug mode is active
+@import "utilities/debug";
 //@import "utilities/responsive-utilities"; Only active if necessary
 
 @import "base/normalize";
 @import "base/base";
+@import "base/fonts";
 @import "base/typography";
 
 @import "layout/grids";
